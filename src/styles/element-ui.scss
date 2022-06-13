@@ -1,0 +1,25 @@
+.el-table::before {
+  z-index: 0;
+}
+.el-table .cell .el-link {
+	margin: 0 5px;
+}
+
+
+.el-row {
+  position: relative;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.el-form-item__label::after{
+	content: ":";
+	margin-left: 0.25rem;
+}
+
+// .el-drawer .el-form {
+//   padding-right: 1rem;
+//   padding-left: 1rem;
+// }

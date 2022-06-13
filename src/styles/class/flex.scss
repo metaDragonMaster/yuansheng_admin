@@ -1,0 +1,120 @@
+// flex
+@mixin mixin-flex {
+	display: flex;
+}
+.flex ,
+[flex] {
+	@include mixin-flex;
+}
+
+//dom向右边对齐
+//父级dom必须是flex，否则无效果
+.drift-right:nth-of-type(1), 
+[drift-right]:nth-of-type(1) {
+	display: block;
+	width: fit-content;
+	margin: 0 0 0 auto;
+}
+
+// flex布局 两边对齐
+@mixin mixin-flex-js-sb {
+	display: flex;
+	justify-content: space-between;
+}
+.flex-js-sb ,
+[flex-js-sb] {
+	@include mixin-flex-js-sb;
+}
+// flex布局 两边居中对齐
+@mixin mixin-flex-center-js-sb {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-center-js-sb ,
+[flex-center-js-sb] {
+	@include mixin-flex-center-js-sb;
+}
+// flex布局 同等分布
+@mixin mixin-flex-js-sard {
+	display: flex;
+	justify-content: space-around;
+}
+.flex-js-sard ,
+[flex-js-sard] {
+	@include mixin-flex-js-sard;
+}
+@mixin mixin-flex-center-js-sard {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.flex-center-js-sard ,
+[flex-center-js-sard] {
+	@include mixin-flex-center-js-sard;
+}
+
+// flex布局 横排垂直水平居中
+@mixin mixin-flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flex-center ,
+[flex-center] {
+	@include mixin-flex-center;
+}
+
+// 竖排垂直水平居中
+@mixin mixin-flex-align-center {
+	display: flex;
+	align-items: center;
+}
+.flex-align-center ,
+[flex-align-center] {
+	@include mixin-flex-align-center;
+}
+
+// 竖排垂直水平居中
+@mixin mixin-flex-column-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.flex-column-center ,
+[flex-column-center] {
+	@include mixin-flex-column-center;
+}
+
+// 竖排垂直两边对齐
+@mixin mixin-flex-column-js-sb {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.flex-column-js-sb ,
+[flex-column-js-sb] {
+	@include mixin-flex-column-js-sb;
+}
+// 竖排垂直同等分布
+@mixin mixin-flex-column-js-sard {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.flex-column-js-sard ,
+[flex-column-js-sard] {
+	@include mixin-flex-column-js-sard;
+}
+// 竖排居中垂直同等分布
+@mixin mixin-flex-column-center-js-sb {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-column-center-js-sb ,
+[flex-column-center-js-sb] {
+	@include mixin-flex-column-center-js-sb;
+}
